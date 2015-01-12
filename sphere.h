@@ -8,8 +8,7 @@ public:
     sphere(Vector3D thePc, float ther);
     Vector3D getPc(void);
     float getr(void);
-    Vector3D getP0(void){return Vector3D(0,0,0);}
-    Vector3D getn0(void){return Vector3D(0,0,0);}
+    int objectType();
 private:
     float r;    //radius
     Vector3D Pc;    //center

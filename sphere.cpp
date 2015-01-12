@@ -13,3 +13,6 @@ float sphere::getr(void)
 {
     return r;
 }
+int sphere::objectType(){
+    return 1;
+}

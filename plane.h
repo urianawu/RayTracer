@@ -5,14 +5,22 @@
 class plane : public geometry
 {
 public:
-    plane(Vector3D theP0, Vector3D then0);
-    Vector3D getP0(void);
+    plane(Vector3D thePc, Vector3D then0, Vector3D then1, Vector3D then2, float s0, float s1);
+    
+    Vector3D getPc(void);
+    
     Vector3D getn0(void);
-    Vector3D getPc(void){return Vector3D(0,0,0);}
-    float getr(void){return 0.0;}
+    Vector3D getn1(void);
+    Vector3D getn2(void);
+    
+    float gets0();
+    float gets1();
+
+    int objectType();
 private:
-    Vector3D n0;
-    Vector3D P0;
+    Vector3D n0, n1, n2;
+    float s0, s1;
+    Vector3D Pc;
 };
 
 #endif // PLANE_H
